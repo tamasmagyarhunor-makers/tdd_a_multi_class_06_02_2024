@@ -17,7 +17,7 @@ _Include the name of the function, its parameters, return value, and side effect
 
 ```python
 # EXAMPLE
-class Belnder():
+class Blender():
     def __init__(self):
         self.storage = []
 
@@ -35,11 +35,11 @@ class Belnder():
         """
         pass # Test-driving means _not_ writing any code here yet.
 
-    def make_juice(self, fruit):
-        """It takes a Fruit, and returns a {Fruit.name} juice.
+    def make_juice(self):
+        """Makes juice with the Fruit(s) in the storage
 
         Parameters: (list all parameters and their types)
-            fruit: a Fruit object
+           None 
 
         Returns: (state the return value and its type)
             String (eg. "orange juice")
@@ -100,6 +100,18 @@ expected = [fruit]
 
 assert actual == expected
 assert type(actual[0]) == Fruit
+
+"""
+Given a Blender makes juice
+It returns a Fruit juice.
+"""
+blender = Blender()
+fruit = Fruit('orange')
+blender.add_fruit(fruit)
+actual = blender.make_juice()
+expected = "orange juice"
+
+assert actual == expected
 
 """
 Given a Fruit object is instantiated
