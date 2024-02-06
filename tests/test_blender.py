@@ -39,3 +39,18 @@ def test_blender_makes_juice():
     expected = "orange juice"
 
     assert actual == expected
+
+"""
+Given a Blender makes juice with multiple Fruits
+It returns a Fruit juice with multiple Fruits.
+"""
+def test_blender_makes_juice_with_2_fruits():
+    blender = Blender()
+    fruit = Fruit('orange')
+    fruit2 = Fruit('apple')
+    blender.add_fruit(fruit)
+    blender.add_fruit(fruit2)
+    actual = blender.make_juice()
+    expected = "orange, apple juice"
+
+    assert actual == expected
