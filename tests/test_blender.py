@@ -26,3 +26,16 @@ def test_blender_adds_fruit():
 
     assert actual == expected
     assert type(actual[0]) == Fruit
+
+"""
+Given a Blender makes juice
+It returns a Fruit juice.
+"""
+def test_blender_makes_juice():
+    blender = Blender()
+    fruit = Fruit('orange')
+    blender.add_fruit(fruit)
+    actual = blender.make_juice()
+    expected = "orange juice"
+
+    assert actual == expected
