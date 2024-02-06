@@ -42,7 +42,7 @@ class Belnder():
             fruit: a Fruit object
 
         Returns: (state the return value and its type)
-            String (eg. "Orange juice")
+            String (eg. "orange juice")
 
         Side effects: (state any side effects)
             None
@@ -55,6 +55,18 @@ class Fruit():
 
     def get_name(self):
         return self.name
+        """It takes no argument and returns a String.
+
+        Parameters:
+            None
+
+        Returns:
+            String (eg. "orange")
+
+        Side effects:
+            None
+
+        """
 ```
 
 ## 3. Create Examples as Tests
